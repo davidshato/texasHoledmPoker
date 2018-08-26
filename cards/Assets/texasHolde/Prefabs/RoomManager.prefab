@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1455446076088010}
+  m_IsPrefabParent: 1
+--- !u!1 &1455446076088010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4087263884404926}
+  - component: {fileID: 114608231419285888}
+  - component: {fileID: 114557119775714880}
+  - component: {fileID: 114755547215113974}
+  m_Layer: 0
+  m_Name: RoomManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4087263884404926
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455446076088010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 577.4823, y: 262.69794, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114557119775714880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455446076088010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed687ea8457d0ea44a3243efcee7c959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSound: {fileID: 0}
+  shuffleSound: {fileID: 0}
+  winSound: {fileID: 0}
+  MainPot: 0
+  MainPotAmount: {fileID: 0}
+  HandAnalizer: {fileID: 0}
+  cardSprites: []
+  deck: {fileID: 114755547215113974}
+  communityCard: {fileID: 0}
+  cardsInTable: []
+  players: []
+  currentTurnPlayer: {fileID: 0}
+  currentPlayerIndex: 0
+  localPlayer: {fileID: 0}
+  moneyAmount: {fileID: 0}
+  betAmount: {fileID: 0}
+  paidAmount: {fileID: 0}
+  infoText: {fileID: 0}
+  turnState: 0
+  playerPanels:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  buttonStay: {fileID: 0}
+  buttonHitMe: {fileID: 0}
+  buttonDoubleDown: {fileID: 0}
+  buttonSplit: {fileID: 0}
+  buttonPlaceBet: {fileID: 0}
+  buttonRaiseBet: {fileID: 0}
+  everybodyChecked: 1
+  CheckedPlayers: []
+  maxTempBet: 0
+--- !u!114 &114608231419285888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455446076088010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 186
+    i1: 108
+    i2: 162
+    i3: 113
+    i4: 209
+    i5: 231
+    i6: 244
+    i7: 164
+    i8: 216
+    i9: 58
+    i10: 129
+    i11: 35
+    i12: 55
+    i13: 187
+    i14: 44
+    i15: 107
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &114755547215113974
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455446076088010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbfbed4bd2879ad4c93ac8c271ee973d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shuffleSound: {fileID: 0}
+  readyCards: []
+  usedCards: []
